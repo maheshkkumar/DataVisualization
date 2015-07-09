@@ -1,6 +1,11 @@
 ## DataVisualization
 Data Visualization on all the Indian Open Data
 
+### Open Data Source
+
+#### [Open Government Data (OGD) Platform India](https://data.gov.in/)
+The rationale behind open government data can be considered as twofold. First, advocates contend that making government data available to the public in open formats increases government transparency and accountability. Second, open data should enable third parties to leverage the potential of government data through the development of applications and services that address public and private demands.
+
 ### Data Visualization Tools
 
 #### [D3.js](http://d3js.org/) 
