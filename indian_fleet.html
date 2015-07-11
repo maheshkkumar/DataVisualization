@@ -22,7 +22,7 @@
 		<script>
 			//Regular pie chart example
 			
-			var forestData =  
+			var fleetPieData =  
 						[
 	      					{
 	      						"label" : "1947",
@@ -282,10 +282,10 @@
 	      					}
 	      				];
 
-	      	var forestDataBarChart=  
+	      	var fleetBarData=  
 						[ 
     						{
-						      key: "Forest Covers",
+						      key: "Fleet Statistics",
 						      values:[
 	      					{
 	      						"label" : "1947",
@@ -546,8 +546,8 @@
 	      				]
 	      			}
 	      		]
-	      	renderPieChart(forestData, "#pieChart");	
-	      	renderBarChart(forestDataBarChart, "#barChart");			 
+	      	renderPieChart(fleetPieData, "#pieChart");	
+	      	renderBarChart(fleetBarData, "#barChart");			 
 		</script>	
 		<div id="pieChart">
 			<svg></svg>
