@@ -1,20 +1,4 @@
-/*
-function renderPieChart(data, chartDiv){
-  nv.addGraph(function() {
-        var chart = nv.models.pieChart()
-            .x(function(d) { return d.label })
-            .y(function(d) { return d.value })
-            .showLabels(true);
 
-          d3.select(chartDiv + "  svg")
-              .datum(data)
-              .transition().duration(350)
-              .call(chart);
-
-        return chart;
-  });
-}
-*/
 function renderPieChart(data, chartDiv){
   //Donut chart example
   nv.addGraph(function() {
@@ -27,6 +11,9 @@ function renderPieChart(data, chartDiv){
         .donut(true)          //Turn on Donut mode. Makes pie chart look tasty!
         .donutRatio(0.35)     //Configure how big you want the donut hole size to be.
         ;
+
+      chart.valueFormat(d3.format('d'));
+      d3.selectAll(chartDiv + ' .nv-x .tick text').text(function(d){return d;})
 
       d3.select(chartDiv + "  svg")
           .datum(data)

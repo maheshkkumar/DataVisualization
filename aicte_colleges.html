@@ -17,258 +17,286 @@
 	    <a href="index.html" class="uk-navbar-brand">Open Data Visualization</a>
 	</nav>
 	<div>
-		<h2 class=".uk-article-title">Indian Forest Cover of SFR 2005</h2>
+		<h2 class=".uk-article-title">State-wise number of colleges recognized by AICTE - 2012-2013</h2>
 
 		<h3 class=".uk-article-title">Donut Chart</h3>
 		<script>
 			//Regular pie chart example
 			
-			var forestData =  
+			var collegePieData =  
 						[
+							{
+								"label" : "Andaman & Nicobar Islands",
+								"value" : 1
+
+							},
 	      					{
 	      						"label" : "Andhra Pradesh",
-	      						"value" : 45231
+	      						"value" : 455
 	      					},
 	      					{
 	      						"label" : "Arunachal Pradesh",
-	      						"value" : 67472
+	      						"value" : 0
 	      					},
 	      					{
 	      						"label" : "Assam",
-	      						"value" : 27758
+	      						"value" : 7
 	      					},
 	      					{
 	      						"label" : "Bihar",
-	      						"value" : 6807
+	      						"value" : 24
+	      					},
+	      					{
+	      						"label" : "Chandigarh",
+	      						"value" : 3
 	      					},
 	      					{
 	      						"label" : "Chhattisgarh",
-	      						"value" : 55929
+	      						"value" : 71
 	      					},
 	      					{
+	      						"label" : "Dadra & Nagar Haveli",
+	      						"value" : 3
+	      					},
+
+	      					{
 	      						"label" : "Delhi",
-	      						"value" : 177
+	      						"value" : 29
 	      					},
 	      					{
 	      						"label" : "Goa",
-	      						"value" : 2156
+	      						"value" : 8
 	      					},
 	      					{
 	      						"label" : "Gujarat",
-	      						"value" : 14604
+	      						"value" : 367
 	      					},
 	      					{
 	      						"label" : "Haryana",
-	      						"value" : 1604
+	      						"value" : 131
 	      					},
 	      					{
 	      						"label" : "Himachal Pradesh",
-	      						"value" : 14666
+	      						"value" : 32
 	      					},
 	      					{
 	      						"label" : "Jammu & Kashmir",
-	      						"value" : 22689
+	      						"value" : 7
 	      					},
 	      					{
 	      						"label" : "Jharkhand",
-	      						"value" : 22722
+	      						"value" : 9
 	      					},
 	      					{
 	      						"label" : "Karnataka",
-	      						"value" : 36200
+	      						"value" : 304
 	      					},
 	      					{
 	      						"label" : "Kerala",
-	      						"value" : 17284
+	      						"value" : 172
 	      					},
 	      					{
 	      						"label" : "Madhya Pradesh",
-	      						"value" : 77739
+	      						"value" : 272
 	      					},
 	      					{
 	      						"label" : "Maharashtra",
-	      						"value" : 50661
+	      						"value" : 571
 	      					},
 	      					{
 	      						"label" : "Manipur",
-	      						"value" : 16952
+	      						"value" : 3
 	      					},
 	      					{
 	      						"label" : "Meghalaya",
-	      						"value" : 17205
-	      					},
-	      					{
-	      						"label" : "Mizoram",
-	      						"value" : 18600
-	      					},
-	      					{
-	      						"label" : "Nagaland",
-	      						"value" : 13665
+	      						"value" : 2
 	      					},
 	      					{
 	      						"label" : "Orissa",
-	      						"value" : 48755
+	      						"value" : 93
+	      					},
+	      					{
+	      						"label" : "Puducherry",
+	      						"value" : 13
 	      					},
 	      					{
 	      						"label" : "Punjab",
-	      						"value" : 1660
+	      						"value" : 110
 	      					},
 	      					{
 	      						"label" : "Rajasthan",
-	      						"value" : 16012
+	      						"value" : 117
 	      					},
 	      					{
 	      						"label" : "Sikkim",
-	      						"value" : 3357
+	      						"value" : 1
 	      					},
 	      					{
 	      						"label" : "Tamil Nadu",
-	      						"value" : 23314
+	      						"value" : 562
+	      					},
+	      					{
+	      						"label" : "Telangana",
+	      						"value" : 343
 	      					},
 	      					{
 	      						"label" : "Tripura",
-	      						"value" : 8173
+	      						"value" : 4
 	      					},
 	      					{
 	      						"label" : "Uttar Pradesh",
-	      						"value" : 14346
+	      						"value" : 222
 	      					},
 	      					{
 	      						"label" : "Uttarakhand",
-	      						"value" : 24493
+	      						"value" : 61
 	      					},
 	      					{
 	      						"label" : "West Bengal",
-	      						"value" : 12970
+	      						"value" : 124
 	      					}
 	      				];
 
-	      	var forestDataBarChart=  
+	      	var collegeBarData=  
 						[ 
     						{
 						      key: "Forest Covers",
 						      values:[
 	      					{
+								"label" : "AN",
+								"value" : 1
+
+							},
+	      					{
 	      						"label" : "AP",
-	      						"value" : 45231
+	      						"value" : 455
 	      					},
 	      					{
 	      						"label" : "AR",
-	      						"value" : 67472
+	      						"value" : 0
 	      					},
 	      					{
 	      						"label" : "AS",
-	      						"value" : 27758
+	      						"value" : 7
 	      					},
 	      					{
 	      						"label" : "BR",
-	      						"value" : 6807
+	      						"value" : 24
+	      					},
+	      					{
+	      						"label" : "CH",
+	      						"value" : 3
 	      					},
 	      					{
 	      						"label" : "CT",
-	      						"value" : 55929
+	      						"value" : 71
 	      					},
 	      					{
+	      						"label" : "DN",
+	      						"value" : 3
+	      					},
+
+	      					{
 	      						"label" : "DL",
-	      						"value" : 177
+	      						"value" : 29
 	      					},
 	      					{
 	      						"label" : "GA",
-	      						"value" : 2156
+	      						"value" : 8
 	      					},
 	      					{
 	      						"label" : "GJ",
-	      						"value" : 14604
+	      						"value" : 367
 	      					},
 	      					{
 	      						"label" : "HR",
-	      						"value" : 1604
+	      						"value" : 131
 	      					},
 	      					{
 	      						"label" : "HP",
-	      						"value" : 14666
+	      						"value" : 32
 	      					},
 	      					{
 	      						"label" : "JK",
-	      						"value" : 22689
+	      						"value" : 7
 	      					},
 	      					{
 	      						"label" : "JH",
-	      						"value" : 22722
+	      						"value" : 9
 	      					},
 	      					{
 	      						"label" : "KA",
-	      						"value" : 36200
+	      						"value" : 304
 	      					},
 	      					{
 	      						"label" : "KL",
-	      						"value" : 17284
+	      						"value" : 172
 	      					},
 	      					{
 	      						"label" : "MP",
-	      						"value" : 77739
+	      						"value" : 272
 	      					},
 	      					{
 	      						"label" : "MH",
-	      						"value" : 50661
+	      						"value" : 571
 	      					},
 	      					{
 	      						"label" : "MN",
-	      						"value" : 16952
+	      						"value" : 3
 	      					},
 	      					{
 	      						"label" : "ML",
-	      						"value" : 17205
-	      					},
-	      					{
-	      						"label" : "MZ",
-	      						"value" : 18600
-	      					},
-	      					{
-	      						"label" : "NL",
-	      						"value" : 13665
+	      						"value" : 2
 	      					},
 	      					{
 	      						"label" : "OR",
-	      						"value" : 48755
+	      						"value" : 93
+	      					},
+	      					{
+	      						"label" : "PY",
+	      						"value" : 13
 	      					},
 	      					{
 	      						"label" : "PB",
-	      						"value" : 1660
+	      						"value" : 110
 	      					},
 	      					{
 	      						"label" : "RJ",
-	      						"value" : 16012
+	      						"value" : 117
 	      					},
 	      					{
 	      						"label" : "SK",
-	      						"value" : 3357
+	      						"value" : 1
 	      					},
 	      					{
 	      						"label" : "TN",
-	      						"value" : 23314
+	      						"value" : 562
+	      					},
+	      					{
+	      						"label" : "TG",
+	      						"value" : 343
 	      					},
 	      					{
 	      						"label" : "TR",
-	      						"value" : 8173
+	      						"value" : 4
 	      					},
 	      					{
 	      						"label" : "UP",
-	      						"value" : 14346
+	      						"value" : 222
 	      					},
 	      					{
 	      						"label" : "UT",
-	      						"value" : 24493
+	      						"value" : 61
 	      					},
 	      					{
 	      						"label" : "WB",
-	      						"value" : 12970
+	      						"value" : 124
 	      					}
 	      				]
 	      			}
 	      		]
-	      	renderPieChart(forestData, "#pieChart");	
-	      	renderBarChart(forestDataBarChart, "#barChart");			 
+	      	renderPieChart(collegePieData, "#pieChart");	
+	      	renderBarChart(collegeBarData, "#barChart");			 
 		</script>	
 		<div id="pieChart">
 			<svg></svg>
