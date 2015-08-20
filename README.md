@@ -1,4 +1,4 @@
-## DataVisualization
+## Data Visualization
 Data Visualization on all the Indian Open Data
 <br>
 ####[Open Data Visualization](http://maheshkkumar.github.io/DataVisualization/index.html)
